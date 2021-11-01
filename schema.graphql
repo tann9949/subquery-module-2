@@ -1,0 +1,23 @@
+type myObject @entity {
+
+  id: ID! #id is a required field
+
+  blockNumber: Int!
+
+  account_to: String #filed2 is an optional field
+
+  balance: BigInt @index
+
+  timestamp: Date
+
+  success: Boolean
+
+
+
+}
+
+type Account @entity {
+  id: ID!
+  account: String
+  balance: BigInt
+}
